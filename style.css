@@ -1,0 +1,171 @@
+#whole {
+  width: 100%;
+  height: 100%;
+}
+
+#choose {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#chooseMethod {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#selfChoice, #randomChoice {
+  padding: 15px 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  margin: 15px;
+  text-transform: uppercase;
+}
+#selfChoice {
+  background: linear-gradient(to left, #f2994a, #f2c94c);
+}
+#randomChoice {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+#chooseSelf {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#chooseSelf div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#chooseSelf form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#chooseSelf form textarea {
+  resize: none;
+  margin: 10px;
+  font-size: 20px;
+  padding: 12px 14px;
+  border: 2px solid #f2c94c;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#chooseSelf form textarea:focus {
+  box-shadow: 0 0 15px #f2c94c;
+  outline: 0;
+}
+
+#aWrong, #sumWrong {
+  font-size: 16px;
+  margin: 10px;
+  background: linear-gradient(to right, #cb2d3e, #ef473a);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+
+  display: none;
+}
+#sumWrong {
+  margin-bottom: 30px;
+}
+
+
+#setValues {
+  padding: 15px 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  margin: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+#task {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#task p {
+  font-size: 40px;
+  margin-bottom: 220px;
+}
+
+#task textarea {
+  position: relative;
+  resize: none;
+  margin: 0;
+  text-align: center;
+  top: 10px;
+  border: none;
+  border-radius: 15px;
+}
+
+#firstNum, #secondNum {
+  padding: 0 5px;
+  border-radius: 10px;
+}
+
+#line {
+  position: relative;
+  width: 875px;
+  height: 83px;
+}
+
+#lineProcess {
+  width: 783px;
+  height: 1px; 
+  position: absolute;
+  top: 19px;
+  left: 35px;
+}
+
+#farr, #sarr {
+  width: 0;
+  left: 0;
+  height: auto;
+  position: absolute;
+  bottom: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#task #farr textarea, #task #sarr textarea {
+  margin: 10px;
+  position: relative;
+  display: block;
+  resize: none;
+  font-size: 25px;
+  padding: 8px 4px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  text-align: center;
+}
+#farr img, #sarr img {
+  width: 100%;
+}
+
+#sarr {
+  display: none;
+}
+

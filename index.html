@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>UCHI</title>
+
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.1.1.js"></script>
+    <script src="jquery-css-transform.js"></script>
+    <script src="script.js"></script>
+  
+</head>
+<body>
+
+    <div id="whole">
+
+      <!-- ВЫБОР ЗНАЧЕНИЙ -->
+      <div id="choose">
+        <!-- способ выборки -->
+        <div id="chooseMethod">
+          <button id="selfChoice">Указать вручную</button>
+          <button id="randomChoice">Случайная выборка</button>
+        </div>
+        <!-- указание значений вручную -->
+        <div id="chooseSelf">
+          <p id = "aWrong">Значение 'a' должно быть между 6 и 9</p>
+          <p id = "sumWrong">Значение 'b' должно быть между 11 и 14</p>
+          <div>
+            <form>
+              <textarea rows="1" cols="2" maxlength="2" placeholder="a" id="firstValue"></textarea>
+              <textarea rows="1" cols="2" maxlength="2" placeholder="b" id="secondValue"></textarea>
+            </form>
+            <button id="setValues">Задать значения</button>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- ЗАДАНИЕ -->
+      <div id="task">
+        <p>
+          <span id="firstNum"></span>
+          +
+          <span id="secondNum"></span>
+          =
+          <textarea rows="1" cols="2" maxlength="2" id="sumNum" disabled>?</textarea>
+        </p>
+        <div id="line">
+          <img src="./sprite.png"/>
+          <div id="lineProcess">
+              <div id="farr">
+                <textarea rows="1" cols="2" maxlength="2" id="aVal"></textarea>
+                <img src="./arrow.png"/>
+              </div>
+              <div id="sarr">
+                <textarea rows="1" cols="2" maxlength="2" id="bVal"></textarea>
+                <img src="./arrow.png"/>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
+
